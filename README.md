@@ -8,11 +8,13 @@ The idea behind the Vigenère cipher, like all other polyalphabetic ciphers, is 
 Both encryption and decryption are implemented, here are how both works:
 
 **Encrypting**
+
 A key is given with the message, this key is then duplicated as many times until it's length is the same as the message. The key is then converted to its equivalent ASCII number. After that each letter in the message is shifted by the relevant ASCII number.
 
 ![Imgur](https://i.imgur.com/1w2Iepa.png)
 
 **Decrypting**
+
 When decrypting, each letter is considered an instance of `CaesarCracker` so we have an array of `CaesarCrackers`. Each one of these `CaesarCracker` is initialized with a different key. So for a message that is encrypted with 4 keys, we will have an array of 4 `CaesarCraker`s where each letter in the message associated with the same key is added to a `String` that will be decrypted with that key later.
 
 ![Imgur](https://i.imgur.com/V8MCRZJ.png)
