@@ -1,4 +1,4 @@
-## Vigenère Cipher 🔒
+## Vigenère Cipher 🔒 - Encryption & Decryption
 ![Imgur](https://i.imgur.com/Ski7uDe.jpg)
 
 The idea behind the Vigenère cipher, like all other polyalphabetic ciphers, is to disguise the plaintext **letter frequency** to interfere with a straightforward application of **frequency analysis**. For instance, if `P` is the most frequent letter in a ciphertext whose plaintext is in English, one might suspect that `P` corresponds to `E` since `E` is the most frequently used letter in English. However, by using the Vigenère cipher, `E` can be enciphered as different ciphertext letters at different points in the message, which defeats simple frequency analysis. 
